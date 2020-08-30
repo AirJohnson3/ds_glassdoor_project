@@ -106,4 +106,4 @@ df.columns
 
 df_out = df.drop(['Unnamed: 0'], axis = 1)
 
-df_out.to_csv('salary_data_cleaned.csv')
+df_out.to_csv('salary_data_cleaned.csv', index = False)

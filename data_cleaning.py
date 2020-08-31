@@ -2,14 +2,14 @@
 """
 Created on Sat Aug 29 23:05:08 2020
 
-@author: Micha
+@author: Michael
 """
 
 import pandas as pd
 
 df = pd.read_csv('glassdoor_jobs.csv')
 
-#Salary Parsing
+# Salary parsing
 df['hourly'] = df['Salary Estimate'].apply (lambda x: 1 if 'per hour' in x.lower() else 0)
 df['employer_provided'] = df['Salary Estimate'].apply (lambda x: 1 if 'employer provided salary:' in x.lower() else 0)
 
@@ -23,86 +23,96 @@ df['min_salary'] = min_hr.apply(lambda x: int(x.split('-')[0]))
 df['max_salary'] = min_hr.apply(lambda x: int(x.split('-')[1]))
 df['avg_salary'] = (df.min_salary+df.max_salary)/2
 
-#Company Name Text
+# Company name text
 df['company_txt'] = df.apply(lambda x: x['Company Name'] if x['Rating'] < 0 else x['Company Name'][:-3], axis = 1)
 
-#Location Information
+# Location information
 df['job_state'] = df['Location'].apply(lambda x: x.split(',')[1])
 df.job_state.value_counts()
 
 df['state_hq'] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0, axis = 1)
 
-#Age of Company
+# Age of company
 df['age'] = df.Founded.apply(lambda x: x if x < 1 else 2020 - x)
 
-#Job Description Parsing (word cloud)
+#Job description parsing (word cloud)
 df['Job Description'][0]
 
-#Python
+# Python
 df['python_yn'] = df['Job Description'].apply(lambda x: 1 if 'python' in x.lower() else 0)
 df.python_yn.value_counts()
 
-#R
+# R
 df['rstudio_yn'] = df['Job Description'].apply(lambda x: 1 if 'r studio' in x.lower() or 'r-studio' in x.lower() or 'r,' in x.lower() or 'r language' in x.lower() or 'r languages' in x.lower() or 'or r' in x.lower() or 'languages r' in x.lower() else 0)
 df.rstudio_yn.value_counts()
 
-#Spark
+# Spark
 df['spark_yn'] = df['Job Description'].apply(lambda x: 1 if 'spark' in x.lower() else 0)
 df.spark_yn.value_counts()
 
-#AWS
+# AWS
 df['aws_yn'] = df['Job Description'].apply(lambda x: 1 if 'aws' in x.lower() else 0)
 df.aws_yn.value_counts()
 
-#Excel
+# Excel
 df['excel_yn'] = df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
 df.excel_yn.value_counts()
 
-#Java (JavaScript)
-df['java_yn'] = df['Job Description'].apply(lambda x: 1 if 'java' in x.lower() or 'javascript' in x.lower() else 0)
+# JavaScript
+df['java_yn'] = df['Job Description'].apply(lambda x: 1 if 'javascript' in x.lower() else 0)
 df.java_yn.value_counts()
 
-#Swift
+# Java
+df['java_yn'] = df['Job Description'].apply(lambda x: 1 if 'java' in x.lower() else 0)
+df.java_yn.value_counts()
+
+# Swift
 df['swift_yn'] = df['Job Description'].apply(lambda x: 1 if 'swift' in x.lower() else 0)
 df.swift_yn.value_counts()
 
-#Scala
+# Scala
 df['scala_yn'] = df['Job Description'].apply(lambda x: 1 if 'scala' in x.lower() else 0)
 df.scala_yn.value_counts()
 
-#Go
+# Go
 df['go_yn'] = df['Job Description'].apply(lambda x: 1 if 'go' in x.lower() else 0)
 df.go_yn.value_counts()
 
-#Elm
+# Elm
 df['elm_yn'] = df['Job Description'].apply(lambda x: 1 if 'elm' in x.lower() else 0)
 df.elm_yn.value_counts()
 
-#Ruby
+# Ruby
 df['ruby_yn'] = df['Job Description'].apply(lambda x: 1 if 'ruby' in x.lower() else 0)
 df.ruby_yn.value_counts()
 
-#C Sharp
-df['csharp_yn'] = df['Job Description'].apply(lambda x: 1 if 'C#' in x.lower() or 'c++' in x.lower() or 'c languages' in x.lower() or 'c language' in x.lower() else 0)
+# C Sharp
+df['csharp_yn'] = df['Job Description'].apply(lambda x: 1 if 'C#' in x.lower() or 'c sharp' in x.lower() else 0)
 df.csharp_yn.value_counts()
 
-#Rust
+# C
+df['csharp_yn'] = df['Job Description'].apply(lambda x: 1 if 'C' in x.lower() or 'c languages' in x.lower() or 'c language' in x.lower() else 0)
+df.csharp_yn.value_counts()
+
+# C++
+df['csharp_yn'] = df['Job Description'].apply(lambda x: 1 if 'c++' in x.lower() else 0)
+df.csharp_yn.value_counts()
+
+# Rust
 df['rust_yn'] = df['Job Description'].apply(lambda x: 1 if 'rust' in x.lower() else 0)
 df.rust_yn.value_counts()
 
-#SQL
+# SQL
 df['sql_yn'] = df['Job Description'].apply(lambda x: 1 if 'sql' in x.lower() else 0)
 df.sql_yn.value_counts()
 
-#MatLab
+# MatLab
 df['matlab_yn'] = df['Job Description'].apply(lambda x: 1 if 'matlab' in x.lower() else 0)
 df.matlab_yn.value_counts()
 
-#Julia
+# Julia
 df['julia_yn'] = df['Job Description'].apply(lambda x: 1 if 'julia' in x.lower() else 0)
 df.julia_yn.value_counts()
-
-df.columns
 
 df_out = df.drop(['Unnamed: 0'], axis = 1)
 

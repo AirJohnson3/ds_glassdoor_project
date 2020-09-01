@@ -1,6 +1,6 @@
 # ds_glassdoor_project
 
-## Resources
+### Resources
 1. Author: Ken Jee
    * URL: https://www.youtube.com/playlist?list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t
    - Followed guides to create first data science projects from beginning to end.

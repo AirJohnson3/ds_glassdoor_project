@@ -1,4 +1,4 @@
-## ds_glassdoor_project
+## Glassdoor Project: Introduction into Data Science
 
 ### Resources
 **1. Author: Ken Jee**

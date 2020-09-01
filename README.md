@@ -1,5 +1,11 @@
 ## Glassdoor Project: Introduction into Data Science
-
+### Project Overview
+* This project was my first introduction into a full data science project. My goals going into the project were to obtain a basic understanding for the fundementals of data science.
+* Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job.
+* Scraped over 1000 job descriptions from glassdoor using python and selenium
+* Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
+* Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
+* Built a client facing API using flask
 ### Resources
 **1. Author: Ken Jee**
    - Followed guides to create first data science projects from beginning to end.

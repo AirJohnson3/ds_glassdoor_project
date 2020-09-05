@@ -116,3 +116,5 @@ Finally, the word cloud provides insight into the top 500 words from each of the
 10. Word Cloud
 
 ![Image of WordCloud](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/WordCloud.png)
+
+## Model Building and Performance

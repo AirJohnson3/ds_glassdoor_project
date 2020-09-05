@@ -27,25 +27,25 @@
 ### Web Scraping
 To obtain the initial data, I adjusted the web scraper designed by arapfaik to obtain information from Glassdoor.com. The following categories are the most important included in the glassdoor_jobs.csv file:
 
-	**1. Job Title**
+1. Job Title
 
-	**2. Salary**
+2. Salary
 
-	**3. Job Description**
+3. Job Description
 
-	**4. Rating**
+4. Rating
 
-	**5. Company**
+5. Company
 
-	**6. Location**
+6. Location
 
-	**7. Company Size**
+7. Company Size
 
-	**8. Industry**
+8. Industry
 
-	**9. Sector**
+9. Sector
 
-	**10. Company Revenue**
+10. Company Revenue
 
 Additional categories came from the scraper but had no value in the EDA phase.
 

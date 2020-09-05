@@ -26,27 +26,61 @@
    
 ### Web Scraping
 To obtain the initial data, I adjusted the web scraper designed by arapfaik to obtain information from Glassdoor.com. The following categories are the most important included in the glassdoor_jobs.csv file:
-**1. Job Title**
-**2. Salary**
-**3. Job Description**
-**4. Rating**
-**5. Company**
-**6. Location**
-**7. Company Size**
-**8. Industry**
-**9. Sector**
-**10. Company Revenue**
+
+1. Job Title
+
+2. Salary
+
+3. Job Description
+
+4. Rating
+
+5. Company
+
+6. Location
+
+7. Company Size
+
+8. Industry
+
+9. Sector
+
+10. Company Revenue
+
 Additional categories came from the scraper but had no value in the EDA phase.
 
 ## Data Cleaning
-**1. Obtained annual salary average**
-**2. Removed rows missing salary data**
-**3. Parsed company rating**
-**4. Pulled state into a new column from location**
-**5. Added company age based on year founded**
-**6. Added columns for each skill**
-**7. Added column for simplified job title and Seniority levels**
-**8. Added column for description length**
+1. Obtained annual salary average
+
+2. Removed rows missing salary data
+
+3. Parsed company rating
+
+4. Pulled state into a new column from location
+
+5. Added company age based on year founded
+
+6. Added columns for each skill
+
+7. Added column for simplified job title and Seniority levels
+
+8. Added column for description length**
 
 ## EDA
+As an aspiring Data Scientist, technical skills represented an important part of this project. The following four skills are the most requested skills pulled from the job description of each post:
 
+1. Python
+
+![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
+
+2. R-Studio
+
+![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
+
+3. Excel
+
+![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)
+
+4. SQL
+
+![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)

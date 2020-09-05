@@ -39,3 +39,14 @@ To obtain the initial data, I adjusted the web scraper designed by arapfaik to o
 Additional categories came from the scraper but had no value in the EDA phase.
 
 ## Data Cleaning
+**1. Obtained annual salary average**
+**2. Removed rows missing salary data**
+**3. Parsed company rating**
+**4. Pulled state into a new column from location**
+**5. Added company age based on year founded**
+**6. Added columns for each skill**
+**7. Added column for simplified job title and Seniority levels**
+**8. Added column for description length**
+
+## EDA
+

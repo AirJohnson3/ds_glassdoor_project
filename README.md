@@ -7,7 +7,8 @@
 	* **Further Analysis** - I would like to analyze the exact number of companies using individual phrases based on the weight they carried in the word cloud. I also plan to limit certain words and phrases to capture a wider set of valuable information from the word cloud.
 * This tool estimates possible salaries of Data Scientists to about an 11,000-dollar accuracy in mean absolute error (MAE). Designing this tool following the step-by-step project instructions from Ken Jee (see resources) and gave me insights into using linear regression, Lasso, and Random Forrest Regressors with GridsearchCV.
 * The full scope of the tool scrapes Glassdoor looking to capture a wide variety of information on each job posting. In total, I scraped 1,000 different job postings with the web scrapper designed by arapfaik. With the help of tutorials by Ken Jee, I learned techniques to pull specific words from the job descriptions to identify the number of companies looking for skillsets like Python, R, and other languages related to data science. I also learned how to use libraries like pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, and pickle in conjunction with Python 3.8. Finally, the project also contains client a client facing API through the help of Flask.
-### Resources
+
+## Resources
 As stated above, this whole project was an introduction into data science with a tutorial made by Ken Jee. Even though this is a step-by-step recreation, it gives me a baseline for what I need to learn from and some interesting information from the EDA highlights the specific skills to develop.
 
 **1. Author: Ken Jee**
@@ -26,7 +27,7 @@ As stated above, this whole project was an introduction into data science with a
    - Following guide for productionizing through Flask.
    - [Link to webpage](https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2)
    
-### Web Scraping
+## Web Scraping
 To obtain the initial data, I adjusted the web scraper designed by arapfaik to obtain information from Glassdoor.com. The following categories are the most important included in the glassdoor_jobs.csv file:
 
 1. Job Title

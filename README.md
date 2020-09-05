@@ -118,3 +118,14 @@ Finally, the word cloud provides insight into the top 500 words from each of the
 ![Image of WordCloud](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/WordCloud.png)
 
 ## Model Building and Performance
+Through the guide by Ken Jee, I transformed categorical variables into dummy variables and split the data into train and tests sets with a test size of 20%.
+Evaluation of the three models attempted used Mean Absolute Error due to the limited amount of outliers in this type of model.
+
+1. **Multiple linear regression** added a baseline for the model and was, probably due to my error, wildly inaccurate even with some of the measures taken to get a better baseline. This is a primary area of improvement I need to follow.
+
+2. **Lasso Regression** provided a better estimation for average salary with the MAE coming in at about 16,000 difference.
+
+3. **Random Forest** was the, by far, most accurate, with the MAE at about 11,500 difference.
+
+## Productionization
+The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary. The flask API endpoint hosted on a local webserver came from Chris I. with adjustments following the tutorial by Ken Jee.

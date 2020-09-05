@@ -49,4 +49,20 @@ Additional categories came from the scraper but had no value in the EDA phase.
 **8. Added column for description length**
 
 ## EDA
-
+Analyzed the number of times each of following skills showed in the job description:
+1. Python
+2. R
+3. Spark
+4. AWS
+5. Excel
+6. Java
+7. Scala
+8. C#
+9. Rust
+10. SQL
+11. Matlab
+These four graphs represent the most requested skill:
+1. ![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
+2. ![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
+3. ![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)
+4. ![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)

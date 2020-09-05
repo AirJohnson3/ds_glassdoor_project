@@ -26,73 +26,53 @@
    
 ### Web Scraping
 To obtain the initial data, I adjusted the web scraper designed by arapfaik to obtain information from Glassdoor.com. The following categories are the most important included in the glassdoor_jobs.csv file:
-**1. Job Title**
 
-**2. Salary**
+	**1. Job Title**
 
-**3. Job Description**
+	**2. Salary**
 
-**4. Rating**
+	**3. Job Description**
 
-**5. Company**
+	**4. Rating**
 
-**6. Location**
+	**5. Company**
 
-**7. Company Size**
+	**6. Location**
 
-**8. Industry**
+	**7. Company Size**
 
-**9. Sector**
+	**8. Industry**
 
-**10. Company Revenue**
+	**9. Sector**
+
+	**10. Company Revenue**
 
 Additional categories came from the scraper but had no value in the EDA phase.
 
 ## Data Cleaning
-**1. Obtained annual salary average**
+1. Obtained annual salary average
 
-**2. Removed rows missing salary data**
+2. Removed rows missing salary data
 
-**3. Parsed company rating**
+3. Parsed company rating
 
-**4. Pulled state into a new column from location**
+4. Pulled state into a new column from location
 
-**5. Added company age based on year founded**
+5. Added company age based on year founded
 
-**6. Added columns for each skill**
+6. Added columns for each skill
 
-**7. Added column for simplified job title and Seniority levels**
+7. Added column for simplified job title and Seniority levels
 
-**8. Added column for description length**
+8. Added column for description length**
 
 ## EDA
-Analyzed the number of times each of following skills showed in the job description:
+As an aspiring Data Scientist, technical skills represented an important part of this project. The following four skills are the most requested skills pulled from the job description of each post:
 
-1. Python
+1. Python ![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
 
-2. R
+2. R-Studio ![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
 
-3. Spark
+3. Excel ![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)
 
-4. AWS
-
-5. Excel
-
-6. Java
-
-7. Scala
-
-8. C#
-
-9. Rust
-
-10. SQL
-
-11. Matlab
-
-These four graphs represent the most requested skill:
-
-1. ![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
-2. ![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
-3. ![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)
-4. ![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)
+4. SQL ![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)

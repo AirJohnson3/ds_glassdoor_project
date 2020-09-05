@@ -84,3 +84,23 @@ As an aspiring Data Scientist, technical skills represented an important part of
 4. SQL
 
 ![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)
+
+Another interesting pairs of graphs for an aspiring Data Scientist comes from the average salary data and company ratings:
+
+![Image of Average Salary](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/AverageSalary.png)
+
+![Image of Ratings](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Ratings.png)
+
+Although location data and job sectors will constantly change, understanding the heavier job markets helps in preparing and deciding on which sector and location will provide the highest number of jobs:
+
+![Image of Location](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/State.png)
+
+![Image of Location](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Sector.png)
+
+A heatmap comparing the age of each company, average salary, company ratings, and job description lengths uncovers an interesting point. The older companies within this specific search provide lower average salaries:
+
+![Image of Heatmap](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/HeatMap.png)
+
+Finally, the word cloud provides insight into the top 500 words from each of the job descriptions. This area is something that would benefit from more refinement on the type of words to dismiss.
+
+![Image of WordCloud](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/WordCloud.png)

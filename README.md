@@ -27,41 +27,71 @@
 ### Web Scraping
 To obtain the initial data, I adjusted the web scraper designed by arapfaik to obtain information from Glassdoor.com. The following categories are the most important included in the glassdoor_jobs.csv file:
 **1. Job Title**
+
 **2. Salary**
+
 **3. Job Description**
+
 **4. Rating**
+
 **5. Company**
+
 **6. Location**
+
 **7. Company Size**
+
 **8. Industry**
+
 **9. Sector**
+
 **10. Company Revenue**
+
 Additional categories came from the scraper but had no value in the EDA phase.
 
 ## Data Cleaning
 **1. Obtained annual salary average**
+
 **2. Removed rows missing salary data**
+
 **3. Parsed company rating**
+
 **4. Pulled state into a new column from location**
+
 **5. Added company age based on year founded**
+
 **6. Added columns for each skill**
+
 **7. Added column for simplified job title and Seniority levels**
+
 **8. Added column for description length**
 
 ## EDA
 Analyzed the number of times each of following skills showed in the job description:
+
 1. Python
+
 2. R
+
 3. Spark
+
 4. AWS
+
 5. Excel
+
 6. Java
+
 7. Scala
+
 8. C#
+
 9. Rust
+
 10. SQL
+
 11. Matlab
+
 These four graphs represent the most requested skill:
+
 1. ![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
 2. ![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
 3. ![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)

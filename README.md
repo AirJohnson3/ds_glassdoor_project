@@ -70,7 +70,7 @@ Additional categories came from the scraper but had no value in the EDA phase.
 8. Added column for description length**
 
 ## EDA
-As an aspiring Data Scientist, technical skills represented an important part of this project. The following four skills are the most requested skills pulled from the job description of each post:
+As an aspiring Data Scientist, technical skills represented an important aspect of this project for me to understand the typical job requirements. The following four skills are the most requested skills pulled from the job description of each post:
 
 1. Python
 
@@ -98,7 +98,7 @@ Another interesting pairs of graphs for an aspiring Data Scientist comes from th
 
 ![Image of Ratings](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Ratings.png)
 
-Although location data and job sectors will constantly change, understanding the heavier job markets helps in preparing and deciding on which sector and location will provide the highest number of jobs:
+Although location data and job sectors will constantly change, understanding the heavier job markets helps in preparing for eventual employment. Knowing with sector and location that provides the highest number of jobs gives me an understanding for the industries in need of data scientists:
 
 7. Job locations
 
@@ -108,7 +108,7 @@ Although location data and job sectors will constantly change, understanding the
 
 ![Image of Location](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Sector.png)
 
-A heatmap comparing the age of each company, average salary, company ratings, and job description lengths uncovers an interesting point. The older companies within this specific search provide lower average salaries:
+A heatmap comparing the age of each company, average salary, company ratings, and job description lengths uncovers an interesting point. The older companies within this specific search provided lower average salaries:
 
 9. Heatmap
 

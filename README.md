@@ -70,13 +70,17 @@ Additional categories came from the scraper but had no value in the EDA phase.
 As an aspiring Data Scientist, technical skills represented an important part of this project. The following four skills are the most requested skills pulled from the job description of each post:
 
 1. Python
+
 ![Image of Python Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Python.png)
 
 2. R-Studio
+
 ![Image of R-Studio Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/R-Studio.png)
 
 3. Excel
+
 ![Image of SQL Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/SQL.png)
 
 4. SQL
+
 ![Image of Excel Graph](https://github.com/AirJohnson3/ds_glassdoor_project/blob/master/Images/Excel.png)
